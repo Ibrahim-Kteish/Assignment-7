@@ -1,0 +1,181 @@
+:root {
+    --link-color: #ecf0f1;
+    --accent-color: #e74c3c;
+    --primary-color: #2c3e50;
+    --nav-height: 60px;
+    --bg-color: #f4f6f7;
+    --card-color: #ffffff;
+    --box-color: #e8f8f5;
+}
+
+
+body {
+    margin: 0;
+    background-color: var(--bg-color);
+  
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: var(--nav-height);
+
+    background-color: var(--primary-color);
+
+    display: flex;
+    align-items: center;
+
+    z-index: 1000;
+}
+
+
+nav a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+
+
+nav a:hover {
+    color: var(--accent-color);
+    text-decoration: underline;
+}
+
+
+
+.nav-sections {
+    display: flex;
+    gap: 45px;
+    margin-left: 48px;
+}
+
+
+
+.assignment {
+    margin-left: auto;
+    margin-right: 48px;
+}
+
+
+section {
+    width: 80%;
+
+    margin: 30px auto;
+    padding: 40px;
+
+    box-sizing: border-box;
+
+    background-color: var(--card-color);
+    color: var(--primary-color);
+
+    border: 1px solid #dcdcdc;
+}
+
+
+
+#section1 {
+    margin-top: 90px;
+    position: relative;
+}
+
+
+#section1 h2 {
+    color: var(--primary-color);
+}
+
+
+.featured {
+    position: absolute;
+
+    top: -20px;
+    right: 28px;
+
+    padding: 10px 22px;
+
+    background-color: var(--accent-color);
+    color: white;
+
+}
+
+
+
+#section2 h2,
+#section2 h3,
+#section2 p {
+    color: var(--primary-color);
+}
+
+
+.sticky-header {
+    position: sticky;
+
+    top: var(--nav-height);
+
+    background-color: var(--primary-color);
+    color: var(--link-color);
+
+    padding: 12px 14px;
+
+    margin-bottom: 25px;
+
+    z-index: 500;
+}
+
+
+.boxes {
+    white-space: nowrap;
+}
+
+.box {
+    display: inline-block;
+
+    width: 31.5%;
+
+    box-sizing: border-box;
+
+    padding: 20px;
+
+    background-color: var(--box-color);
+    color: var(--primary-color);
+
+    margin-right: 2%;
+
+    vertical-align: top;
+}
+
+
+
+.box:last-child {
+    margin-right: 0;
+}
+
+
+
+#section3 {
+    color: var(--primary-color);
+}
+
+
+
+.square-list {
+    list-style-type: square;
+    padding-left: 28px;
+}
+
+
+
+.roman-list {
+    list-style-type: upper-roman;
+
+    background-color: #eaeded;
+
+    padding: 20px 20px 20px 45px;
+}
+
+
+.roman-list li {
+    padding: 4px 0;
+}
